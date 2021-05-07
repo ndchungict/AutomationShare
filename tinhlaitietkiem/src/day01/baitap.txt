@@ -1,0 +1,20 @@
+  1. TinhLaiTietKiem
+Mức lãi suất khi gửi tiết kiệm số cố định như sau:
+- 1 năm mức lãi suất 5.6 (%/năm)
+- 2 năm mức lãi suất 6.2 (%/năm)
+- 3 năm trở lên mức lãi suất 6.4 (%/năm)
+Viết chương trình tính và in số tiền cuối kỳ nhận được theo số tiền gửi và số năm gửi(Số năm tính theo int)
+Với 3 trường hợp sau
+a) Không quay vòng
+b) Tự động quay vòng gốc
+c) Tự động quay vòng gốc và lãi
+-----------------------------------------------------------------------------------------------------------------
+Update:
+- Chỉ có 3 mức kỳ hạn là: 1 năm, 2 năm, 3 năm.
+- Chỉ cần nhập vào thời gian gửi ,đơn vị là năm, (không cần tính theo tháng hay ngày bắt đầu, ngày kết thúc)
+- Nếu thời gian gửi < kỳ hạn => tất toán trước hạn => ko được nhận lãi
+- Số lần quay vòng = thời gian / kỳ hạn (lấy nguyên).
+VD: Gửi thời gian 5 năm, kỳ hạn 2 năm thì đc 2 vòng lãi. 1 năm còn lại ko có lãi.
+ Gửi thời gian 5 năm, kỳ hạn 3 năm thì đc 1 vòng lãi. 2 năm còn lại ko có lãi.
+- Quay vòng gốc là khi hết kỳ hạn thì tự động lấy tiền gốc để gửi vòng tiếp theo.
+- Quay vòng gốc và lãi là khi hết kỳ hạn thì tự động lấy tổng tiền gốc + tiền lãi của vòng trước  để gửi vòng tiếp theo.
